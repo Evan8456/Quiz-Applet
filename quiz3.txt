@@ -1,0 +1,117 @@
+,Generally
+
+,A. Arrays are better than ArrayList
+,B. ArrayLists are better than Arrays
+,C. Depends on the circumstances
+,D. B but also C
+,E. Neither
+,D
+,4
+
+,Code:
+ArrayList <String> myArray = new ArrayList<String>();
+
+myArray.size() returns:
+
+,A. 0
+,B. 1
+,C. 2
+,D. 3
+,E. 4
+,A
+,2
+
+,String is:
+
+,A. An object
+,B. A primitive
+,C. An array of chars
+,D. A and C
+,E. None of these
+,A
+,4
+
+,Code:
+String[] newArray = null;
+newArray[0] = "code";
+
+Why does this compile but printing newArray[0] doesn't work?
+
+,A. Wrong array name
+,B. That cell is already filled
+,C. That cell doesn't exist
+,D. The array doesn't exist but it used to
+,E. The array doesn't exist but the reference to it does
+,E
+,6
+
+,Code:
+String myString = "water";
+System.out.println(myString.length());
+
+,A. 5
+,B. 6
+,C. 4
+,D. Nothing
+,E. 10
+,A
+,4
+
+,Why is it myArray.length but myArrayList.size()?
+
+,A. length is private and its ArrayList equivalent is public
+,B. length is private and its ArrayList equivalent is private
+,C. length is public and its ArrayList equivalent is public
+,D. length is public and its ArrayList equivalent is private
+,E. Java programmers are inconsistent.
+,D
+,6
+
+,Code:
+System.out.println();
+What are valid things to put in the brackets?
+,A. A string
+,B. A string surrounded by quotation marks
+,C. A succession of string concatenated with plus signs
+,D. An array
+,E. B and C
+,E
+,4
+
+,What do int byte char long have in common?
+,A. They are all primitive types
+,B. They all hold one value.
+,C. They are not objects
+,D. All of the above
+,E. None of these
+,D
+,2
+
+,Advantage of ArrayList over arrays?
+,A. Useful if you don't know the number of elements
+,B. Resizes automatically
+,C. Easier to track content
+,D. A B & C
+,E. None; arrays are always superior
+,D
+,4
+
+,Who invented Java?
+,A. Linus Torvalds
+,B. Steve Jobs
+,C. Bill Gates
+,D. James Gosling
+,E. Charles Babbage
+,D
+,2
+
+,Code:
+System.out.println(one fish two fish red fish blue fish);
+What does this print:
+,A. one fish two fish red fish blue fish
+,B. one two red blue
+,C. Nothing
+,D. Doesn't compile
+,E. None of these
+,D
+,6

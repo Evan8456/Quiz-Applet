@@ -1,0 +1,158 @@
+,Consider 
+int a = 6; 
+int b = 12; 
+while(a<b){ 
+
+  System.out.println("In the loop"); 
+
+  a+=2; 
+  b-=2; 
+
+}
+How many times is the phrase "In the loop" printed?
+
+,A.1
+,B.2
+,C.3
+,D.4
+,E.5
+,B
+,1
+
+,In Java; elements of an array are automatically initialized to some default value. 
+What is the default value for the elements of an array of integers?
+
+,A.0
+,B."0"
+,C.null
+,D.1
+,E.'0'
+,A
+,2
+
+,You want to initialize all of the elements of a double array a to the same value equal to 1.5.What could you write? 
+Assume that the array has been correctly initialized.
+
+,A. for(int i=1; i<a.length; i++) a[i] = 1.5;
+,B. for(int i=0; i<=a.length; i++) a[i] = 1.5;
+,C.for(int i=0; i<a.length; i++) a[i] = 1.5;
+,D.for(int i=0; i<a.length+1; i++) a[i] = 1.5;
+,E.for(int i=0; i<a.length-1; i++) a[i] = 1.5;
+,C
+,5
+
+,Which of the following while statements is equivalent to 
+do{ 
+y=x+7; 
+x++; 
+}while(x<9); 
+
+
+(Hint: You might want to draw a flow chart to figure out the answer) 
+,A. 
+y=x+7; 
+x++; 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+,B. 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+y=x+7; 
+x++; 
+,C. 
+while(x<=9){ 
+  y=x+7; 
+  x++; 
+} 
+
+,D.A and B 
+,E.A B and C
+,A
+,6
+
+,Consider the code 
+int[] x = {5 6 7 8 9};//Assume actual code has commas separating input instead of spaces  
+int[] y = x; 
+y[2] = 10; 
+
+
+What is the value of x[2]?
+
+,A.6
+,B.7
+,C.10
+,D.8
+,E.0
+,C
+,6
+
+,Consider the following piece of code: 
+int i; 
+for(i=0; i<10; i++){ 
+/* some code that doesn't modify i */ 
+
+
+} 
+System.out.println("i="+i); /* line A */ 
+
+
+What is printed by the statement on line A?
+
+,A.i=0
+,B.i=9
+,C.i=10
+,D.i=11
+,E.This piece of code doesn't compile since the scope of i is limited to the for loop.
+,C
+,6
+
+,What is printed by the following code fragment? 
+
+int[] a = {0 1 2 3 4 5 6};//Assume actual code has commas separating input instead of spaces
+
+System.out.println(a.length);
+
+,A.5
+,B.6
+,C.7
+,D.8
+,E.Can't tell. There is not enough information.
+,C
+,5
+ 
+,How would you declare and initialize a palette of Color objects Array of size 6?
+
+,A. Color palette = new Color[5];
+,B. Color palette[6];
+,C. Color[5] palette;
+,D. Color[] palette = new Color[6];
+,E. Color[] palette = new Color[5];
+,D
+,5
+ 
+,The documentation of a class lists a method castToIntArray that has a double array as a formal 
+parameter and returns an array of integers. What is the signature of the method?
+
+,A. public void castToIntArray(double[] a)
+,B. public [] castToIntArray(double a)
+,C. public int castToIntArray(double a)
+,D. public int[] castToIntArray(double[] a)
+,E. public int[] castToIntArray()
+,D
+,6
+
+,Which of the following is true regarding the continue statement in a for loop?
+
+,A. continue transfers the control flow to the initialization statement of the for loop.
+,B. continue transfers the control flow to the conditional statement of the for loop.
+,C. continue transfers the control flow to the update statement of the for loop.
+,D. continue transfers the control flow to the statement just after the for loop
+,E. continue transfers the control flow to the statement just before the for loop
+,C
+,8
+
+

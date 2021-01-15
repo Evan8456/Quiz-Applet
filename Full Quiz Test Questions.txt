@@ -1,0 +1,2051 @@
+,What is the size of a double variable in Java?
+
+,A. 2 Bytes 
+,B. 4 Bytes
+,C. 8 Bytes
+,D. It depends on the compiler setting 
+,E. It depends on the opertating System
+,C
+,1
+
+
+,What is the output from the following code?
+int x = 5 and y = 2;
+System.out.println(x/y - (double)(x/y));
+
+,A. 0
+,B. 0.5
+,C. -0.5
+,D. -2.5
+,E. None of the above
+,A
+,3
+
+
+,What is displayed by:
+
+System.out.println("1" + new Integer(2) + 3);
+
+,A. The statement has a syntax error and wont't compile
+,B. 6
+,C. 15
+,D. 123
+,E. ClassCastException
+,D
+,3
+
+
+,Consider the method:
+
+public String mystery(String s)
+{
+     String s1 = s.substring(0);
+     String s2 = s.substring(1);
+     String s3 = s.substring(2);
+     if (s.length() <= 3)
+          return s3 + s2 + s1;
+     else
+          return s1 + mystery(s2) + s3;
+}
+
+What is the output of
+
+System.out.println(mystery("DELIVER"));
+
+,A. DELIVER
+,B. DEVILER
+,C. REVILED
+,D. RELIVED
+,E. DELIVERELIVERLIVERIVERRERVERERVERIVERLIVER
+,E
+,5
+
+
+,What is the output by the code below?  
+
+System.out.print("ab\\ab" );
+
+What is the output of the following code segment above?
+,A. abab
+,B. ab
+,C. ab\ab
+,D. bab
+,E. aba
+,C
+,3
+
+
+
+,Suppose an array A has n elements.  Let's call it periodic with a period of p if 0 < p < n and A[i] == A[i+p] for all 0 <= i < n-p and p is the smallest such number.
+
+What is the period of array v after the following code is executed?
+
+     int v[] = new int[100];
+     v[0] = 0; v[1] = 1;
+
+     for (int i = 2; i < 100; i++)
+          v[i] = v[i-1] - v[i-2];
+ 
+
+What would the output be by executing the getTotal(); ?
+,A. 7
+,B. 6
+,C. 4
+,D. 45
+,E. Integer.MAX_VALUE
+,B
+,5
+
+
+,Consider the following two classes:
+
+ public class Dog
+ {
+    public void act()
+    {
+        System.out.print("run ");
+        eat();
+    }
+    public void eat()
+    {
+        System.out.print("eat ");
+    }
+  }
+     
+ public class UnderDog extends Dog
+ {
+    public void act()
+    {
+       super.act();
+       System.out.print("sleep ");
+    }
+    public void eat()
+    {
+       super.eat();
+       System.out.print("bark ");
+    }
+ }
+
+Assume that the following declaration appears in a class other than Dog.
+Dog fido = new UnderDog();
+
+What is printed as a result of the call fido.act() ?
+,A. run eat
+,B. run eat sleep
+,C. run eat sleep bark
+,D. run eat bark sleep
+,E. None of the above.
+,D
+,7
+
+
+,What is the output of the following code?
+int sum = 0
+int  p = 1;
+for (int count = 1; count <= 50; count++)
+{
+     sum += p;
+     p *= 2;
+}
+,A. -1
+,B. 562949953421311
+,C. 1125899906842623 
+,D. infinity due to infinte loop
+,E. null
+,A
+,8
+
+
+,A recursive method upNdown is defined as follows:
+public void upNdown(int n)
+{
+     if (n > 1)
+     {
+          if (n % 2 != 0) upNdown(n+1);
+          else upNdown(n/2);
+          System.out.println("*");
+     }
+}
+
+How many stars are displayed when upNdown(5) is called?
+,A. 1
+,B. 2
+,C. 3
+,D. 4
+,E. 5
+,E
+,8
+
+
+,The method mixup is defined as follows:
+
+String mixup(String word)
+{
+     if (word.length() == 1)
+          return "";
+     else
+          return mixup(word.substring(0)) + word.charAt(word.length() - 1);
+}
+
+What is the value of the string returned by mixup("IDEAL")?
+,A. IDEAL
+,B. DEAL
+,C. LEAD
+,D. DEAI
+,E. Syntax error
+,E
+,9
+ 
+,Consider the following program: 
+import myLibrary.*; 
+
+
+public class ShowSomeClass 
+{ 
+// code for the class... 
+}
+What is the name of the java file containing this program?
+
+,A.myLibrary.java
+,B.ShowSomeClass.java
+,C.ShowSomeClass
+,D.ShowSomeClass.class
+,E.Any file name with the java suffix will do
+,B
+,2
+
+,Which of the following is TRUE?
+
+,A.In java; an instance field declared publicgenerates a compilation error.
+,B.int is the name of a class available in the package java.lang
+,C.Instance variable names may only contain letters and digits.
+,D.A class has always a constructor (possibly automatically supplied by the java compiler).
+,E.The more comments in a program; the faster the program runs.
+,D
+,2
+  
+,Consider the following code snippet
+ 
+String river = new String(“Columbia”); 
+System.out.println(river.length()); 
+
+
+What is printed?
+
+,A.6
+,B.7
+,C.8
+,D.Columbia
+,E.river
+,C
+,1 
+
+,A constructor
+
+,A. must have the same name as the class it is declared within.
+,B. is used to create objects.
+,C. may be declared private
+,D. A and B
+,E. A B and C
+,E
+,3
+
+,Which of the following may be part of a class definition?
+
+,A. instance variables
+,B. instance methods
+,C. constructors
+,D. all of the above
+,E. none of the above
+,D
+,3
+
+,What is different between a Java applet and a Java application?
+
+,A. An application can in general be trusted whereas an applet can't
+,B. An applet must be executed in a browser environment
+,C. An applet is not able to access the files of the computer it runs on
+,D. (A) (B) and (C).
+,E. None of the above
+,D
+,5
+
+,Consider 
+
+public class MyClass{ 
+public MyClass(){/*code*/} 
+// more code... 
+
+
+} 
+To instantiate MyClass; you would write?
+
+,A. MyClass mc = new MyClass();
+,B. MyClass mc = MyClass();
+,C. MyClass mc = MyClass;
+,D. MyClass mc = new MyClass;
+,E. It can't be done. The constructor of MyClass should be defined as public void MyClass(){/*code*/}
+,A
+,2 
+
+,What is byte code in the context of Java?
+
+,A. The type of code generated by a Java compiler
+,B. The type of code generated by a Java Virtual Machine
+,C. It is another name for a Java source file
+,D. It is the code written within the instance methods of a class.
+,E. It is another name for comments written within a program.
+,A
+,1
+ 
+,What is garbage collection in the context of Java?
+
+,A.The operating system periodically deletes all of the java files available on the system.
+,B. Any package imported in a program and not used is automatically deleted.
+,C. When all references to an object are gone; the memory used by the object is automatically reclaimed.
+,D.The JVM checks the output of any Java program and deletes anything that doesn't make sense.
+,E. Janitors working for Sun MicroSystems are required to throw away any Microsoft documentation found in the employees' offices.
+,C
+,4
+
+,You read the following statement in a Java program that compiles and executes. 
+submarine.dive(depth); 
+
+
+What can you say for sure?
+
+,A. depth must be an int
+,B. dive must be a method.
+,C. dive must be the name of an instance field.
+,D. submarine must be the name of a class
+,E. submarine must be a method.
+,B
+,5
+
+,Consider 
+int a = 6; 
+int b = 12; 
+while(a<b){ 
+
+  System.out.println("In the loop"); 
+
+  a+=2; 
+  b-=2; 
+
+}
+How many times is the phrase "In the loop" printed?
+
+,A.1
+,B.2
+,C.3
+,D.4
+,E.5
+,B
+,1
+
+,In Java; elements of an array are automatically initialized to some default value. 
+What is the default value for the elements of an array of integers?
+
+,A.0
+,B."0"
+,C.null
+,D.1
+,E.'0'
+,A
+,2
+
+,You want to initialize all of the elements of a double array a to the same value equal to 1.5.What could you write? 
+Assume that the array has been correctly initialized.
+
+,A. for(int i=1; i<a.length; i++) a[i] = 1.5;
+,B. for(int i=0; i<=a.length; i++) a[i] = 1.5;
+,C.for(int i=0; i<a.length; i++) a[i] = 1.5;
+,D.for(int i=0; i<a.length+1; i++) a[i] = 1.5;
+,E.for(int i=0; i<a.length-1; i++) a[i] = 1.5;
+,C
+,5
+
+,Which of the following while statements is equivalent to 
+do{ 
+y=x+7; 
+x++; 
+}while(x<9); 
+
+
+(Hint: You might want to draw a flow chart to figure out the answer) 
+,A. 
+y=x+7; 
+x++; 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+,B. 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+y=x+7; 
+x++; 
+,C. 
+while(x<=9){ 
+  y=x+7; 
+  x++; 
+} 
+
+,D.A and B 
+,E.A B and C
+,A
+,6
+
+,Consider the code 
+int[] x = {5 6 7 8 9};//Assume actual code has commas separating input instead of spaces  
+int[] y = x; 
+y[2] = 10; 
+
+
+What is the value of x[2]?
+
+,A.6
+,B.7
+,C.10
+,D.8
+,E.0
+,C
+,6
+
+,Consider the following piece of code: 
+int i; 
+for(i=0; i<10; i++){ 
+/* some code that doesn't modify i */ 
+
+
+} 
+System.out.println("i="+i); /* line A */ 
+
+
+What is printed by the statement on line A?
+
+,A.i=0
+,B.i=9
+,C.i=10
+,D.i=11
+,E.This piece of code doesn't compile since the scope of i is limited to the for loop.
+,C
+,6
+
+,What is printed by the following code fragment? 
+
+int[] a = {0 1 2 3 4 5 6};//Assume actual code has commas separating input instead of spaces
+
+System.out.println(a.length);
+
+,A.5
+,B.6
+,C.7
+,D.8
+,E.Can't tell. There is not enough information.
+,C
+,5
+ 
+,How would you declare and initialize a palette of Color objects Array of size 6?
+
+,A. Color palette = new Color[5];
+,B. Color palette[6];
+,C. Color[5] palette;
+,D. Color[] palette = new Color[6];
+,E. Color[] palette = new Color[5];
+,D
+,5
+ 
+,The documentation of a class lists a method castToIntArray that has a double array as a formal 
+parameter and returns an array of integers. What is the signature of the method?
+
+,A. public void castToIntArray(double[] a)
+,B. public [] castToIntArray(double a)
+,C. public int castToIntArray(double a)
+,D. public int[] castToIntArray(double[] a)
+,E. public int[] castToIntArray()
+,D
+,6
+
+,Which of the following is true regarding the continue statement in a for loop?
+
+,A. continue transfers the control flow to the initialization statement of the for loop.
+,B. continue transfers the control flow to the conditional statement of the for loop.
+,C. continue transfers the control flow to the update statement of the for loop.
+,D. continue transfers the control flow to the statement just after the for loop
+,E. continue transfers the control flow to the statement just before the for loop
+,C
+,8
+
+,Which of these is an actual Exception that is able to be thrown?
+,A. AssetMissingException
+,B. MissingPacketException
+,C. FileNotFoundException
+,D. CompileException
+,E. NullRedistException
+,C
+,4
+
+,Which of these service classes are used to read files?
+,A. FileReader
+,B. ArrayList
+,C. Scanner
+,D. BufferedReader
+,E. A and D
+
+,E
+,4
+
+,What is the main return type of the main method?
+,A. String[]
+,B. ArrayList<String[]>
+,C. void
+,D. args
+,E. A and C
+,C
+,3
+
+,Is it possible to make an ArrayList of ArrayLists?
+,A. No - ArrayLists cannot hold ADTs (Abstract Data Types)
+,B. Yes
+,C. No - however you can make an ArrayList of primitive arrays
+,D. Only if the ArrayList contained within the other contains a primitive data type
+,E. No - ArrayLists can only store primitive data types (e.g. int or double)
+,B
+,2
+
+,What does this loop print? 
+for(int i = 0;i <= 5;i++)
+{
+	System.out.println("[" + i + "]");
+}
+,A. 5 Boxes with the letter "i" inside on the same line
+,B. 6 boxes with the letter "i" inside on seperate lines
+,C. 4 boxes with the numbers 0 through 4 on seperate lines
+,D. 6 boxes with the numbers 0 through 5 on seperate lines
+,E. 5 boxes with the number 0 inside on seperate lines
+,D
+,3
+
+,What are different types of access modifiers in Java?
+,A. Private Protected Default and Public
+,B. Protected Default and Public
+,C. Private Protected and Public
+,D. Private Protected and Default
+,E. Restricted Private and Public
+,C
+,5
+
+,Which of these is not a Java IDE?
+,A.Netbeans
+,B.Eclipse
+,C.DrJava
+,D.Espresso
+,E.JDeveloper
+,D
+,3
+
+,What is an interface?
+,A.A collection of abstract methods
+,B.A system of graphic images
+,C.A visual element that is able to be imported from the service class java.util.Interface
+,D.A bunch of empty fields that you can enter values in
+,E.A lousy outdated way of thinking
+,A
+,6
+
+,What does CSV stand for?
+,A.Conditional Serial Verification
+,B.Comma Seperated Values
+,C.Critical System Virus
+,D.Constant Stack Vent
+,E.Clear Source Values
+,B
+,3
+
+,Which of these is a Java keyword?
+,A.remove
+,B.base
+,C.direct
+,D.root
+,E.finally
+,E
+,4
+
+,Which of the following is the decimal value for the following binary number?
+
+1001011
+
+,A.74
+,B.75
+,C.67
+,D.150
+,E.43
+,B
+,1
+
+,What is the value of n after the following code is executed?
+
+int n = 2005;
+for (int i = 0; i < 50; i++)
+{
+     n = (n + 3) / 2;
+}
+
+,A.0
+,B.1
+,C.2
+,D.3
+,E.65
+,D
+,2
+
+,Consider the following classes.
+
+public abstract class Animal 
+{
+   public void run()
+   {
+      System.out.println("Running");
+   }
+}
+public class Cheetah extends Animal 
+{
+   public void run()
+   {
+      System.out.println("Running really fast");
+   }
+}
+
+What will be printed out when the below code segment is run?
+
+Animal c = new Cheetah();
+c.run();
+
+,A.Running really fast
+,B.Running
+,C.Nothing will be printed. There will be a runtime error
+,D.Running really fast
+Running
+,E.Running
+Running really fast
+,A
+,3
+
+,What is encapsulation and how does Java implement it?
+
+,A.Encapsulation: data (fields) can be directly accessed by code in all classes. Java implements encapsulation using the visibility modifier public.
+,B.Encapsulation: data (fields) can be hidden inside of an object and this can be accomplished in Java by using the abstract visibility modifier.
+,C.Encapsulation: data (fields) can be hidden inside an object so that they cannot be directly altered by code in other classes. Java implements encapsulation using the visibility modifier private.
+,D.Encapsulation: data (fields) are directly accessible by objects in the same package.
+,E.Encapsulation: data (fields) are directly accessible by objects in the same package and in subclasses.
+,C
+,3
+
+,public class Student {
+  public String getFood() {
+     return "Pizza";
+  }
+  public String getInfo()  { 
+     return this.getFood(); 
+  }
+}
+
+public class GradStudent extends Student {
+  public String getFood() {
+     return "Taco";
+  }
+}
+
+What is the output from this:
+
+Student s1 = new GradStudent();
+s1.getInfo();
+
+,A.Won't compile since you are creating a GradStudent not a Student
+,B.Pizza
+,C.Won't compile since you use this.getFood()
+,D.Taco
+,E.Won't compile since GradStudent doesn?t have a getInfo method
+,D
+,5
+
+,The following method attempts to perform an insertion sort:
+
+      public void sort() 
+0:    { 
+1:       for (int i = 1; i < a.length; i++) 
+2:       {
+3:          int next = a[i]; 
+
+4:          // Move all larger elements to the right 
+5:          int j = i; 
+6:          while (j > 0 && a[j - 1] > next) 
+7:          { 
+8:             a[j-1] = a[j]; 
+9:             j--; 
+10:          } 
+
+11:          // Insert the element 
+12:          a[j] = next; 
+13:       } 
+14:    } 
+
+However it does not work properly. Which is the line that contains an error?
+
+,A. In line 1 the code i < a.length should be i < a.length ? 1.
+,B. In line 5 should be int j = i + 1;
+,C. In line 6 the code j > 0 should be j < i.
+,D. In line 8 it should be a[j] = a[j-1];
+,E. In line 1 the code should be for (int i = 0; i < a.length; i++)
+,D
+,5
+
+,If a is and int array of length 2 and a[0] and a[1] holds values 7 and 13 respectively. What are their values after fun(a) is called? The method fun is defined as follows:
+public void fun(int[] x)
+{
+     x[0] = (int)(100.0 * x[0] / (x[0] + x[1]));
+     x[1] = (int)(100.0 * x[1] / (x[0] + x[1]));
+}
+
+,A.7 and 13
+,B.35 and 27
+,C.34 and 64
+,D.35 and 65
+,E.34 and 66
+,B
+,3
+
+,Which of the following best describes the purpose of a method's pre and post conditions?
+
+,A.They permit the method to be in a different file than the code which calls the method
+,B.They initialize necessary variables so the method will run correctly.
+,C.They explain how a method was implemented
+,D.They communicate with the compiler
+,E.They provide information to the programmer or reader about what the method is intended to do.
+,E
+,4
+
+,What is the difference between an interface and an abstract class?
+
+
+,A.An abstract class is a class that may or may not have abstract methods. Abstract classes cannot be instantiated 
+and the cannot be sub-classed. An interface is a reference type. Similar to a class that can contain only constants 
+and/or method signatures. There are no method bodies. Interfaces cannot be instantiated. They can only be implemented 
+by classes or extended by other interfaces.
+,B.An abstract class is a class that is declared abstract. it may or may not include abstract methods. Abstract 
+classes cannot be instantiated. But they can be sub-classed. The subclass usually provides implementations for all of 
+the abstract methods in its parent class. However if it does not; the subclass must also be declared abstract. An 
+interface is a special kind of abstract class that can contain only class constants and method signatures. There are 
+no method bodies allowed in methods in an interface. Interfaces cannot be instantiated. They can only be implemented 
+by classes or extended by other interfaces.
+,C.An abstract class is a class that is declared abstract. Abstract classes can be instantiated. But they cannot be 
+sub-classed. An interface is a class that can contain only method bodies. Interfaces can be instantiated. But they 
+cannot be implemented by classes or extended by other interfaces.
+,D.There are no differences between an abstract class and an interface. They are both classes that can have abstract 
+and non-abstract methods and there are no method bodies. Neither of them can be instantiated. But they can be 
+sub-classed.
+,E.An abstract class is a class that is declared abstract. It may or may not include abstract methods. Abstract classes
+cannot be instantiated. But they can be sub-classed. The subclass usually provides implementations for all of the 
+abstract methods in its parent class. However if it does not; the subclass must also be declared abstract. An 
+interface is is class that has method bodies.
+,B
+,7
+
+,What is the output of the following code?
+
+int a = 1; 
+int b = 2;
+int c = 3;
+a += b + c;
+b += a + c;
+c += a + b;
+System.out.println(a + " " + b + " " + c);
+
+,A.3 3 4
+,B.3 5 6
+,C.5 4 3
+,D.5 8 13
+,E.6 11 20
+,E
+,2
+
+,What does IPO stand for in computer science?
+
+
+,A. Indiana Planetary Observatory
+
+,B. Initial Public Offering
+
+,C. Input Processing Output
+
+,D. International Pacific Ocean
+
+,E. Indexed Program Object
+
+,c
+,2
+
+
+
+
+,Which is not a basic concept of Object-Oriented Programming?
+
+
+,A. Encapsulation
+
+,B. Inheritance
+
+,C. Polymorphism
+
+,D. Extraction
+,
+E. Abstraction
+,d
+
+,4
+
+
+
+
+,What is operator overloading?
+
+
+,A. Where operators are called in till a stack-overflow error
+
+,B. Where different operators have different implementations depending on their arguments
+
+,C. Where a sub class implements the same method as its super class
+
+,D. When an error occurs due to identical methods in the sub and super classes
+
+,E. Timing out the JVM
+
+,b
+
+,7
+
+
+
+
+,According to the Java API: Real-world objects contain _____ and _____. A software object's state is stored in _____.
+
+
+,A. state. behaviour. fields.
+
+,B. methods. code. variables.
+
+,C. functions. processes. random-access-memory.
+
+,D. behaviour. attributes. data-cells.
+
+,E. Source Code. Byte Code. The JVM.
+
+,a
+
+,9
+
+
+
+
+,What does the term API stands for?
+
+
+
+,A. Attribute Processing Implementation
+
+,B. Application Parameter Index
+
+,C. Application Programming Interface
+
+,D. Assisted Processing Index
+
+,E. Applet Parameter Implementation
+
+,c
+
+,8
+
+
+
+
+,How can you prevent your class to be inherited further?
+
+
+,A. Ask nicely in the JavaDoc
+
+,B. Use the "closed" keyword
+
+,C. Use the "restricted" keyword
+
+,D. Use the “final” keyword
+,
+E. Use the "sealed" keyword
+
+,d
+
+,7
+
+
+
+
+,What is the index of the first value in an array?
+
+
+,A. 1
+
+,B. 0
+
+,C. start
+
+,D. null
+
+,E. Array.length
+
+,b
+
+,1
+
+
+
+,A
+
+ 2 dimensional array can be described as a:
+
+
+,A. Array of arrays
+
+,B. Row of books on a shelf
+
+,C. Cartesian plane of values
+
+,D. Bimensional data dot-matrix
+
+,E. None of the above
+
+,a
+
+,3
+
+
+
+
+,Another word for Class is:
+
+
+,A. Object
+
+,B. Structure
+
+,C. Enum
+
+,D. All of the above
+
+,E. None of the above
+
+,e
+
+,5
+
+
+
+
+,A value type that consists of a set of named values is an?
+
+
+,A. Enumeration
+
+,B. Object
+
+,C. Integrated Value Set (IVS)
+
+,D. Integer
+
+,E. Array
+
+,a
+
+,6
+
+
+
+
+,Can a constructor be overloaded?
+
+
+,A. Yes
+
+,B. No
+
+,C. Only in specific circumstances
+
+,D. Yes -but only when exceptions are thrown
+
+,E. Constructors can be overridden but not overloaded
+
+,a
+
+,4
+
+
+
+
+,"String[][] fruits" is a:
+
+
+,A. 1d String array
+
+,B. 3d String array
+
+,C. 3d char array
+
+,D. 2d Integer array
+
+,E. 4d String ArrayList
+
+,c
+
+,5
+
+
+
+
+,Can an ArrayList hold multiple different types of objects at the same time?
+
+
+,A. Yes
+
+,B. No
+
+,C. Yes -as long as all the types are ADTs
+
+,D. Yes -but only since JDK 1.7.2
+
+,E. Yes -but it is not recommend
+
+,b
+
+,3
+
+
+
+
+,How do you declare an abstract class?
+
+
+,A. With the "abst" keyword
+
+,B. With the "abstract" keyword
+
+,C. With the "enum" keyword
+
+,D. With the "applet" keyword
+
+,E. You cannot "declare" a class to be abstract
+
+,b
+
+,7
+
+
+
+
+,What is "Multilevel Inheritance"?
+
+
+,A. Inheritance that contains one base class and multiple derived classes of the same base class
+
+,B. Inheritance that contains several base classes and a derived class
+
+,C. Inheritance that allows the sub and super class to be interchangeable
+
+,D. Inheritance that contains multiple base classes and multiple derived classed
+
+,E. Inheritance that contains a class derived from a derived class
+
+,e
+
+,9
+
+
+
+
+,What is encapsulation?
+
+
+,A. Hiding your code from potential black-hat hackers
+
+,B. Hiding your data from potential black-hat hackers
+
+,C. Only providing the current class with access to its methods and variables
+
+,D. Wrapping your classes in hashkeys
+
+,E. None of the above
+
+,c
+
+,3
+
+
+
+
+,Which is not a valid way to overload a method?
+
+
+,A. Changing the number of parameters
+
+,B. Changing the return type
+
+,C. Changing the order of parameters
+
+,D. Changing the data types of the parameters
+
+,E. A and B
+
+,b
+
+,6
+
+,How many decimals is long
+,A: 1
+,B: 2
+,C: 6
+,D: 15
+,E: 420
+,D
+,4
+
+,What is the limit on nested loops
+,A: 4
+,B: 10
+,C: Unlimited
+,D: 50
+,E: 9
+,C
+,6
+
+,"""=="" is an: 
+,A: assignment operator
+,B: equilibrium operator
+,C: equals sign
+,D: banana
+,E: straight line error
+,A
+,4
+
+,arraylist can hold up to _ values
+,A: specificed by user
+,B: dynamic
+,C: 40
+,D: none
+,E: None of the above
+,B
+,6
+
+
+,UserInput can take
+,A: Strings
+,B: doubles
+,C: ints
+,D: all of the above
+,E: none of the above
+,D
+,7
+
+,You can take input from a scanner
+,A: 1 time
+,B: 2 times
+,C: 3 times
+,D: No times
+,E: You don't take input from a scanner
+,A
+,6
+
+,if statements act upon ___ operators
+,:A: int
+,B: userinput
+,C: boolean
+,D: nested
+,E: assignment
+,C
+,6
+
+,How many decimals is int
+,A: 7
+,B: 44
+,C: 0
+,D: 1
+,E: error
+,C
+,3
+
+,Runtime errors occur when
+,A : When you compile
+,B : Your code is running
+,C: After your code is done
+,D: Before your code start
+,E: None of the above
+,B
+,6
+
+,The output of System.out.println("1+1") is
+,A: 2
+,B: null
+,C: OutofBoundsException
+,D: 1+1
+,E: 11
+,D
+,2
+
+,1.Which is not a primitive variable?
+
+
+,A. Integer
+,B. String
+,C. Short
+,D. Double
+,E. Float
+,B
+
+,1
+
+
+,What is the difference between a constructor and a method?
+
+,A.There is no difference
+
+,B.A method creates objects while a constructor is an ordinary function of a class
+,C.A constructor creates objects while a method is an ordinary function of a class
+,D.A method has the name of the class while the constructor does not
+,E. Methods must return something while constructors may not
+,C
+
+,2
+
+,What happens when you make something private?
+,A.Only the class that owns the feature may access it
+,B.Only one specific method can access it
+,C.It cannot be accessed
+,
+D.You need a passcode to access it
+,E.It is available to all classes on the same package
+,A
+,3
+
+
+,What happens when there are multiple main() methods in the same class?
+
+,A.Nothing. The code runs as usual
+,B.The program will run two times at once
+,C.Only one main() will run at a time. When the first finishes the next starts
+,D.The main()s will split up the work and each run half
+,E.The program will fail to compile because main() is already declared
+,E
+
+,2
+
+
+
+,What is the difference between declaring a variable an defining a variable?
+
+,A.Defining says only the type of variable. Declaration says the type and initializes it
+,B.Declaration says only the type of variable. Defining says the type and initializes it
+,C.Declaring a variable tells the user what it is. Defining it keeps it within the code
+,D.Defining a variable tells the user what it is. Declaring it keeps it within the code
+,E.There is no difference
+,B
+,2
+
+
+,What is the difference between array and ArrayLists?
+
+,A.Array can only hold primitive variable types
+,B.ArrayLists can only hold primitive variable types
+,C.An array’s size is determined before the program is run while an ArrayList’s size can be changed while the program is running
+,D.An ArrayList’s size is determined before the program is run while an array’s size can be changed while the program is running
+,E.There is no difference
+,C
+,1
+
+,
+Consider the following 
+
+
+for(int i = 5; i > 0; i—-)
+
+{
+
+	for(int j = 6; j> 0; j—-)
+	
+	{
+	   
+	   System.out.println(“Hello”);
+
+	}
+
+}
+
+
+How many times is Hello printed?
+,A.10
+,B.15
+,C.20
+,D.25
+,E.30
+,E
+,2
+
+
+,An array holds:
+
+,A.Similar values of same data type
+,B.Different values of same data type
+,C.Same values of different data types
+,D.Different values of different data types
+,E.Only other arrays
+,B
+,1
+
+,What is the size of a Char in Java?
+,A.4 bits
+,B.7 bits
+,C.8 bits
+,D.16 bits
+,E.20 bits
+,D
+,1
+
+,
+
+Which of the following is the data type used for a single character?
+,A.Char
+,B.Short
+,C.Long
+,D.Byte
+,E.Float
+,A
+,1
+
+, How do you exit a loop from inside the loop?
+,a: System.exit()
+,b: exit;
+,c: break;
+,d: there is no way to in java
+,e: back;
+,c
+,1
+,How much code should be in a try block?
+,a: as much as possible
+,b: as little as possible
+,c: one line only
+,d: only methods
+,e: all of your code
+,b
+,3
+, On what line should braces start relative to the header?
+,a: 1 line below
+,b: the same line
+,c: either or
+,d: neither
+,e: both!
+,a
+,2
+
+,How do you compare two strings to see if they are identical
+,a: ==
+,b: .equals
+,c: .equalsIgnoreCase
+,d: it is impossible
+,e: .equalsto
+,b
+,4
+, Are java strings mutable?
+,a: yes
+,b: no
+,c: mostly
+,d: neither
+,e: mutable has no meaning in java
+,c
+,3
+
+, Is java turing complete?
+,a: Yes
+,b: No
+,c: almost
+,d: not even close
+,e: Turing complete has no meaning in java
+,c
+,2
+
+, How many spaces are in a tab?
+,a: none - the tab is it's own character
+,b: 4
+,c: 8
+,d: 2
+,e: 6
+,c
+,3
+
+,Generally
+
+,A. Arrays are better than ArrayList
+,B. ArrayLists are better than Arrays
+,C. Depends on the circumstances
+,D. B but also C
+,E. Neither
+,D
+,2
+
+,Code:
+ArrayList <String> myArray = new ArrayList<String>();
+
+myArray.size() returns:
+
+,A. 0
+,B. 1
+,C. 2
+,D. 3
+,E. 4
+,A
+,1
+
+,String is:
+
+,A. An object
+,B. A primitive
+,C. An array of chars
+,D. A and C
+,E. None of these
+,D
+,2
+
+,Code:
+String[] newArray = null;
+newArray[0] = "code";
+
+Why does this compile but printing newArray[0] doesn't work?
+
+,A. Wrong array name
+,B. That cell is already filled
+,C. That cell doesn't exist
+,D. The array doesn't exist but it used to
+,E. The array doesn't exist but the reference to it does
+,E
+,3
+
+,Code:
+String myString = "water";
+System.out.println(myString.length());
+
+,A. 5
+,B. 6
+,C. 4
+,D. Nothing
+,E. 10
+,A
+,2
+
+,Why is it myArray.length but myArrayList.size()?
+
+,A. length is private and its ArrayList equivalent is public
+,B. length is private and its ArrayList equivalent is private
+,C. length is public and its ArrayList equivalent is public
+,D. length is public and its ArrayList equivalent is private
+,E. Java programmers are inconsistent.
+,D
+,3
+
+,Code:
+System.out.println(one fish two fish red fish blue fish);
+What does this print:
+,A. one fish two fish red fish blue fish
+,B. one two red blue
+,C. Nothing
+,D. Doesn't compile
+,E. none of these
+,D
+,3
+
+,Code:
+System.out.println();
+What are valid things to put in the brackets?
+,A. a string
+,B. a string surrounded by quotation marks
+,C. a succession of string concatenated with plus signs
+,D. an array
+,E. B and C
+,E
+,2
+
+,What do int byte char long have in common?
+,A. They are all primitive types
+,B. they all hold one value.
+,C. they are not objects
+,D. all of the above
+,E. none of these
+,D
+,1
+
+,Advantage of ArrayList over arrays?
+,A. useful if you don't know the number of elements
+,B. resizes automatically
+,C. easier to track content
+,D. a b & c
+,E. none arrays are always superior
+,D
+,2
+
+,Who invented Java?
+,A. Linus Torvalds
+,B. Steve Jobs
+,C. Bill Gates
+,D. James Gosling
+,E. Charles Babbage
+,D
+,1
+
+
+,Which parties have access to variables with the keyword "protected"?
+I. Class
+II. World
+III. Package
+IV. Subclass
+
+,a: I only
+,b: I and II
+,c: IV only
+,d: All
+,e: I and III and IV
+,e
+,8
+
+,What do accessor methods do?
+,a: allow objects to access private class variables
+,b: allow other programmers to use the code
+,c: provide access to exclusive features in the program
+,d: allow for object interaction while maintaining encapsulation
+,e: a and d
+,e
+,5
+
+,How would one instantiate a 2 dimensional array with 3 inner arrays each with 10 values?
+,a: = new int[3]{};
+,b: = new int[3][10];
+,c: = new int[10][3];
+,d: = new int(3)(10);
+,e: = new int[][]{3}{10};
+,b
+,2
+
+,What type of value does ArrayList<ArrayList<String>> hold?
+,a: arraylist of Strings
+,b: arraylist of arraylists
+,c: Strings
+,d: array of Strings
+,e: the variable String
+,a
+,3
+
+,Which of the following contains a ternary operator
+,a: if(Math.random()? x=9?x=10); 
+,b: String result = (x<0): "true" ? "tails";
+,c: String result = (Math.random()>0.5)? "heads": "tails";
+,d: for(x=1;x<10;x++){System.out.println(x);}
+,e: for(int y=0;y<=10;y++){System.out.println(y)};
+,c
+,6
+
+,Consider the following code:
+public class Tester{
+    int x=2;
+    public Tester(int n){
+        int x = 10;
+        this.x = n+x;
+    }
+    
+    public int getX(){
+        return x;
+    }
+}
+
+What does the getX() method return if the Tester object is instantiated with a
+parameter of 5 (In code: Tester tObject = new Tester(5))?
+,a: 0
+,b: 12
+,c: 7
+,d: 15
+,e: 2
+,d
+,8
+
+,Cat snuggles = new Cat();
+Animal zoo = new Animal();
+If Cat extends Animal and implements Movements which of the following statements
+causes a syntax error?
+,a: snuggles = new Animal();
+,b: Movements moves = new Cat();
+,c: snuggles = zoo;
+,d: zoo = new Animal();
+,e: All will result in error
+,a
+,9
+
+,Which java awt gui class is most suitable for multiple choice answers on a quiz
+,a: JButton
+,b: JTextField
+,c: JCheckBox
+,d: JRadioButton
+,e: JMenuItem
+,d
+,5
+
+,Consider the following code:
+int x=3;
+String output = "number "+x;
+switch(x){
+    case 1: output+="1";
+    break;
+    case 2: output+="2";
+    break;
+    case 3: output+="3";
+    case 4: output="4";
+    break;
+    default: output+="x";
+}
+System.out.print(output);
+
+What is the output?
+,a: 4
+,b: number 34
+,c: number 4
+,d: number 7
+,e: 3
+,a
+,6
+
+,Which Integer type has a large enough size to store all unicode character values?
+,a: float
+,b: short
+,c: char
+,d: long
+,e: int
+,c
+,7
+
+,int i = 5;
+int j = 7;
+
+System.out.println(i + "j");
+
+What will this program print?
+,A. i + j
+,B. 5 + 7
+,C. 57
+,D. 5j
+,E. 12
+,D
+,1
+
+,What will the following code print?
+
+int i = 2;
+
+switch(i)
+{
+	case 0:
+		System.out.println("a");
+	case 1:
+		System.out.println("b");
+	case 2:
+		System.out.println("c");
+		break;
+	case 3:
+		System.out.println("d");
+}
+,A. abcd
+,B. c
+,C. cd
+,D. abc
+,E. Nothing. It won't compile
+,B
+,3
+
+,Which of the following is true?
+
+,A. primative variables can be dereferenced
+,B. using the '>' operator on an object causes an error
+,C. by making an instance variable static it will apply to all instances of that class
+,D. a primitive variable must be declared as type name = new type(parameters);
+,E. you can only have one object for each class
+,C
+,4
+
+,Which of the following is true about this line of code
+
+System.out.println(j);
+
+,A. j must be the name of a String
+,B. j must be an object
+,C. out is the name of a method
+,D. println is the name of a class
+,E. none of the above
+,E
+,2
+
+,How many times will this code run?
+
+for(int i = 0; i < 100; i += 7)
+{
+	if(i < 50)
+	{
+		i += 3;
+	}
+	else
+	{
+		i -= 2;
+	}
+}
+
+,A. 16
+,B. 15
+,C. 10
+,D. 0
+,E. infinite
+,B
+,6
+
+,Which of the following is false
+
+,A. Java is an object-oriented programming language
+,B. Classes represent specific instances of objects
+,C. What happens when an Object is printed can be changed by a toString() method
+,D. What happens when a primitive variable is printed can not be changed
+,E. A do while loop will always run at least once
+,B
+,3
+
+,Which of these would cause an error
+
+,A. int i = new Random().nextInt(0);
+,B. if(new String("hat") == new String("dog"))
+,C. while(true)
+,D. String a = 5 + 3 + "";
+,E. None of the above
+,A
+,8
+
+,What would the following code print?
+
+System.out.println(500 / 3);
+
+,A. 500 / 3
+,B. 166.66667
+,C. 166.66
+,D. 166
+,E. 166.67
+,D
+,3
+
+,What would the following code print?
+
+if(true)
+{
+	System.out.print("a");
+	if(((true || false) && (true && false)) ^ true)
+	{
+	System.out.print("b")
+		if(!false)
+		{
+			System.out.print("c");
+		}
+	}
+	
+}
+
+,A. a
+,B. ab
+,C. abc
+,D. illegal Operand
+,E. a illegal Operand
+,C
+,7
+
+,Which of these would construct a 3-dimensional array of integers
+
+,A. int<int<int<>>> a = new Integer<<<>>>;
+,B. int[[[]]] a = new int[[[]]] new Integer[[[]]]];
+,C. int[][][] a = new int[3][5][];
+,D. int[2][5][7] a = new int[2][5][7];
+,E. array(Integer)[3] a = new array(Integer)[3];
+,C
+,9
+
+,Consider 
+int a = 6; 
+int b = 12; 
+while(a<b){ 
+
+  System.out.println("In the loop"); 
+
+  a+=2;
+  b-=2; 
+
+}
+How many times is the phrase "In the loop" printed?
+
+,A.1
+,B.2
+,C.3
+,D.4
+,E.5
+,B
+,1
+
+,In Java; elements of an array are automatically initialized to some default value. 
+What is the default value for the elements of an array of integers?
+
+,A.0
+,B."0"
+,C.null
+,D.1
+,E.'0'
+,A
+,2
+
+,You want to initialize all of the elements of a double array a to the same value equal to 1.5.What could you write? 
+Assume that the array has been correctly initialized.
+
+,A. for(int i=1; i<a.length; i++) a[i] = 1.5;
+,B. for(int i=0; i<=a.length; i++) a[i] = 1.5;
+,C.for(int i=0; i<a.length; i++) a[i] = 1.5;
+,D.for(int i=0; i<a.length+1; i++) a[i] = 1.5;
+,E.for(int i=0; i<a.length-1; i++) a[i] = 1.5;
+,C
+,5
+
+,Which of the following while statements is equivalent to 
+do{ 
+y=x+7; 
+x++; 
+}while(x<9); 
+
+
+(Hint: You might want to draw a flow chart to figure out the answer) 
+,A. 
+y=x+7; 
+x++; 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+,B. 
+while(x<9){ 
+  y=x+7; 
+  x++; 
+} 
+y=x+7; 
+x++; 
+,C. 
+while(x<=9){ 
+  y=x+7; 
+  x++; 
+} 
+
+,D.A and B 
+,E.A B and C
+,A
+,6
+
+,Consider the code 
+int[] x = {5 6 7 8 9};//Assume actual code has commas separating input instead of spaces  
+int[] y = x; 
+y[2] = 10; 
+
+
+What is the value of x[2]?
+
+,A.6
+,B.7
+,C.10
+,D.8
+,E.0
+,C
+,6
+
+,Consider the following piece of code: 
+int i; 
+for(i=0; i<10; i++){ 
+/* some code that doesn't modify i */ 
+
+
+} 
+System.out.println("i="+i); /* line A */ 
+
+
+What is printed by the statement on line A?
+
+,A.i=0
+,B.i=9
+,C.i=10
+,D.i=11
+,E.This piece of code doesn't compile since the scope of i is limited to the for loop.
+,C
+,6
+
+,What is printed by the following code fragment? 
+
+int[] a = {0 1 2 3 4 5 6};//Assume actual code has commas separating input instead of spaces
+
+System.out.println(a.length);
+
+,A.5
+,B.6
+,C.7
+,D.8
+,E.Can't tell. There is not enough information.
+,C
+,5
+ 
+,How would you declare and initialize a palette of Color objects Array of size 6?
+
+,A. Color palette = new Color[5];
+,B. Color palette[6];
+,C. Color[5] palette;
+,D. Color[] palette = new Color[6];
+,E. Color[] palette = new Color[5];
+,D
+,5
+ 
+,The documentation of a class lists a method castToIntArray that has a double array as a formal 
+parameter and returns an array of integers. What is the signature of the method?
+
+,A. public void castToIntArray(double[] a)
+,B. public [] castToIntArray(double a)
+,C. public int castToIntArray(double a)
+,D. public int[] castToIntArray(double[] a)
+,E. public int[] castToIntArray()
+,D
+,6
+
+,Which of the following is true regarding the continue statement in a for loop?
+
+,A. continue transfers the control flow to the initialization statement of the for loop.
+,B. continue transfers the control flow to the conditional statement of the for loop.
+,C. continue transfers the control flow to the update statement of the for loop.
+,D. continue transfers the control flow to the statement just after the for loop
+,E. continue transfers the control flow to the statement just before the for loop
+,C
+,8
+
+
+, Which of the following best describes the set of all pairs of values for boolean variables a and b
+such that (!a && b) == !(a || b) evaluates to true?
+
+,a Empty set
+,b Only one pair: a == true and b == false
+,c Two pairs in which a == true
+,d Two pairs in which a != b
+,e All four possible combinations of values
+,c
+,4
+
+,What is the largest hexidecimal number you can create with 2 digits?
+
+,a AF
+,b FF
+,c CD
+,d 25
+,e ED
+,b
+,6
+
+, If a b and c are integers which of the following conditions is sufficient to guarantee that: 
+a < c || a < b && !(a == c) evaluates true?
+
+,a a < c 
+,b a < b
+,c a > b	
+,d a == b
+,e a == c	
+,a
+,3
+
+, A large Java program was tested extensively and no errors were found. 
+What can be concluded?
+
+,a All of the preconditions in the program are correct. 
+,b All of the postconditions in the program are correct.
+,c The program may have no bugs.
+,d The program has no bugs.
+,e Every method in the program may safely be used in other programs.
+,c
+,2
+
+, What is the output from the following code: int x = 5; int y = 2; 
+   System.out.println(x/y - (double)(x/y));
+
+,a 0	
+,b 0.5
+,c -0.5
+,d -2.5
+,e none of the above
+,a
+,2
+
+, What is the size of a double variable in Java?
+
+,a 2 bytes
+,b 4 bytes	
+,c 8 bytes	
+,d It depends on the compiler setting.
+,e It depends on the operating system.
+,c
+,1
+
+,When you try to compile MyClass the Java compiler gives an error message: 
+   "MyClass is not abstract and does not override abstract method <some method> in java.util.Comparator" Which of the following is <some method> in the error message?
+	
+,a equals(myClass)
+,b compareTo(myClass)
+,c compare(myClass  myClass)// there is a coma where the space is.
+,d compareTo(java.lang.Object)
+,e compare(java.lang.Object  java.lang.Object)//there is a comma where ths space is.
+,e
+,5
+
+,What is displayed by
+System.out.println("1" + new Integer(2) + 3);?
+
+,a The statement has a syntax error and won't compile
+,b 6
+,c 15
+,d 123
+,e ClassCastException
+,d
+,3
+
+,Crossword extends Puzzle and implements Solvable. The following are declared. Which statement will cause a syntax error?
+Puzzle p = new Puzzle()  Crossword cw = new Crossword(10  20) // Assume there is a coma in the space.
+
+,A: p = cw;
+,B: cw = new Puzzle();
+,C:  p = new Crossword(10  20);// there is a coma where the space is.
+,D: Solvable x = new Crossword(10  20); //there is a coma where the space is.
+,E: All of the above will compile with no errors.
+,b
+,4
+
+, Suppose all valid five-digit zip codes are represented as Integer objects and stored in a set containing about 4000 zip codes. Compare two implementations of this set: one is a HashSet with 400 buckets; another is a TreeSet. 
+Assume that various zip codes are matched against the set with roughly the same frequency. Which of the following statements about the average performance of these implementations is true?
+
+,A : HashSet works more than 100 times faster than TreeSet
+,B : HashSet works about 20 times faster than TreeSet
+,C : HashSet works 2-4 times faster than TreeSet
+,D:  HashSet works slower than TreeSet
+,E:  HashSet works roughly as fast as TreeSet. It also takes more than twice as much space
+,c
+,7
+
